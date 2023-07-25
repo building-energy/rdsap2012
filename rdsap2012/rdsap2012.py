@@ -356,6 +356,118 @@ print(table_S3_wall_thickness)
 # Where thickness varies, obtain a weighted average. For example, a detached house with all side of equal length where the rear wall is 250 mm thick and the remaining walls are 350 mm thick, the average is (0.25 × 250) + (0.75 × 350) = 325 mm.
 
 
+# S3.6 Heights and exposed wall areas
+
+# Heights are measured internally within each room, and 0.25 m is added by 
+# software to each room height except for the lowest storey, to obtain the 
+# storey height. 
+# For this purpose the lowest storey is considered separately for each 
+# building part (main dwelling and any extension). 
+# The lowest storey of a building part is the lowest for the dwelling 
+# unless it has been indicated as having the same dwelling below. 
+
+def storey_height(
+        average_room_height,
+        is_lowest_storey  # boolean - true if this is the lowst storey in the building part
+        ):
+    """
+    p10
+    
+    """
+    
+    if is_lowest_storey:
+        
+        storey_height = average_room_height
+        
+    else:
+        
+        storey_height = average_room_height + 0.25
+        
+    return storey_height
+
+# Gross areas (inclusive of openings) are obtained from the product of heat 
+# loss perimeter (after conversion to internal dimensions if relevant) and 
+# storey height, summed over all storeys. 
+
+def gross_area(
+        exposed_perimeters_internal,  # list of internal exposed perimeters, for each storey in building part
+        storey_heights,  # list of storey heights, for each storey in building part
+        ):
+    """
+    p10
+    
+    """
+    result=0
+    
+    for exposed_perimeter_internal, storey_height in \
+        zip(exposed_perimeters_internal,storey_heights):
+        
+        result += exposed_perimeter_internal * storey_height
+
+    return result
+
+
+# Party wall area is party wall length multiplied by storey height, 
+# summed over all storeys.
+        
+def party_wall_area(
+        party_wall_lengths_internal,  # list of internal party wall lengths, for each storey in a building part
+        storey_heights  # list of storey heights, for each storey in building part
+        ):
+    """
+    p10
+    
+    """    
+    result=0
+    
+    for party_wall_length_internal, storey_height in \
+        zip(party_wall_lengths_internal,storey_heights):
+        
+        result += party_wall_length_internal * storey_height
+
+    return result
+    
+
+# For the main dwelling and any extension(s), window and door areas are 
+# deducted from the gross areas to obtain the net wall areas for the heat 
+# loss calculations, except for the door of a flat/maisonette to an unheated 
+# stair or corridor which is deducted from the sheltered wall area (see S3.13).
+
+def net_wall_area(
+        gross_area,  # gross external wall area of building part
+        window_area,  # total window area of building part
+        door_area  # total external door area of building part
+        ):
+    """
+    p10
+    """
+    net_wall_area = gross_area - window_area - door_area
+    
+    return net_wall_area
+        
+
+# If an alternative wall is present, the area of the alternative wall is 
+# recorded net of any openings in it and the alternative wall is identified 
+# as part of the main wall or extension wall. 
+# This area is subtracted from the net wall area of the building part 
+# prior to the calculation of wall heat losses.
+
+# TO DO
+
+
+# S3.7 Door and window areas
+
+# The area of an external door is taken as 1.85 m². 
+# A door to a heated access corridor is not included in the door count.
+
+def door_area(
+        number_of_external_doors
+        ):
+    """
+    """
+    return number_of_external_doors * 1.85
+    
+
 
 
 
