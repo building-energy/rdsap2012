@@ -1,0 +1,21 @@
+{
+    "$schema": "https://raw.githubusercontent.com/building-energy/sap2012/master/sap2012/SAP_input_schema/rdSAP_2012_input_schema.json",
+    "whole_dwelling": {
+        "country": "England & Wales",
+        "region": "Midlands",
+        "transaction_type": "none of the above",
+        "tenure": "owner-occupied",
+        "dwelling_type": "house",
+        "built_form_and_detachment": "detached",
+        "number_of_habitable_rooms": 6,
+        "number_of_heated_habitable_rooms": 6,
+        "dimension_type": "measured_externally",
+        "conservatory":"no conservatory",
+        "conservatory_details": "not applicable",
+        "flats_and_maisonettes_details":"not applicable",
+        "number_of_extensions": 0,
+
+
+    }
+
+}
