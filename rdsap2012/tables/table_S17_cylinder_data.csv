@@ -1,0 +1,7 @@
+descriptor,indicative_data_range,type,size_to_be_used_in_SAP_calculation,table_notes
+inaccessible,,off-peak electric dual immersion,210,Actual size to be used if present in the data set (in conjuntion with solar panel data)
+inaccessible,,from solid fuel boiler,160,Actual size to be used if present in the data set (in conjuntion with solar panel data)
+inaccessible,,otherwise,110,Actual size to be used if present in the data set (in conjuntion with solar panel data)
+normal,up to 130 litres,,110,Actual size to be used if present in the data set (in conjuntion with solar panel data)
+medium,131 - 170 litres,,160,Actual size to be used if present in the data set (in conjuntion with solar panel data)
+large,> 170 litres,,210,Actual size to be used if present in the data set (in conjuntion with solar panel data)

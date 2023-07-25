@@ -1,0 +1,235 @@
+country,wall_type,age_band,wall_thickness
+England & Wales,Stone,A,500
+England & Wales,Solid brick,A,220
+England & Wales,Cavity,A,250
+England & Wales,Timber frame,A,150
+England & Wales,Cob,A,540
+England & Wales,System build,A,250
+England & Wales,Stone,B,500
+England & Wales,Solid brick,B,220
+England & Wales,Cavity,B,250
+England & Wales,Timber frame,B,150
+England & Wales,Cob,B,540
+England & Wales,System build,B,250
+England & Wales,Stone,C,500
+England & Wales,Solid brick,C,220
+England & Wales,Cavity,C,250
+England & Wales,Timber frame,C,150
+England & Wales,Cob,C,540
+England & Wales,System build,C,250
+England & Wales,Stone,D,500
+England & Wales,Solid brick,D,220
+England & Wales,Cavity,D,250
+England & Wales,Timber frame,D,250
+England & Wales,Cob,D,540
+England & Wales,System build,D,250
+England & Wales,Stone,E,450
+England & Wales,Solid brick,E,240
+England & Wales,Cavity,E,250
+England & Wales,Timber frame,E,270
+England & Wales,Cob,E,540
+England & Wales,System build,E,250
+England & Wales,Stone,F,420
+England & Wales,Solid brick,F,250
+England & Wales,Cavity,F,260
+England & Wales,Timber frame,F,270
+England & Wales,Cob,F,540
+England & Wales,System build,F,300
+England & Wales,Park home,F,50
+England & Wales,Stone,G,420
+England & Wales,Solid brick,G,270
+England & Wales,Cavity,G,270
+England & Wales,Timber frame,G,270
+England & Wales,Cob,G,560
+England & Wales,System build,G,300
+England & Wales,Park home,G,50
+England & Wales,Stone,H,420
+England & Wales,Solid brick,H,270
+England & Wales,Cavity,H,270
+England & Wales,Timber frame,H,270
+England & Wales,Cob,H,560
+England & Wales,System build,H,300
+England & Wales,Stone,I,450
+England & Wales,Solid brick,I,300
+England & Wales,Cavity,I,300
+England & Wales,Timber frame,I,300
+England & Wales,Cob,I,590
+England & Wales,System build,I,300
+England & Wales,Park home,I,75
+England & Wales,Stone,J,450
+England & Wales,Solid brick,J,300
+England & Wales,Cavity,J,300
+England & Wales,Timber frame,J,300
+England & Wales,Cob,J,590
+England & Wales,System build,J,300
+England & Wales,Park home,J,100
+England & Wales,Stone,K,450
+England & Wales,Solid brick,K,300
+England & Wales,Cavity,K,300
+England & Wales,Timber frame,K,300
+England & Wales,Cob,K,590
+England & Wales,System build,K,300
+England & Wales,Park home,K,100
+England & Wales,Stone,L,450
+England & Wales,Solid brick,L,300
+England & Wales,Cavity,L,300
+England & Wales,Timber frame,L,300
+England & Wales,Cob,L,590
+England & Wales,System build,L,300
+England & Wales,Park home,L,100
+Scotland,Stone,A,700
+Scotland,Solid brick,A,220
+Scotland,Cavity,A,300
+Scotland,Timber frame,A,150
+Scotland,Cob,A,540
+Scotland,System build,A,250
+Scotland,Stone,B,700
+Scotland,Solid brick,B,220
+Scotland,Cavity,B,300
+Scotland,Timber frame,B,150
+Scotland,Cob,B,540
+Scotland,System build,B,250
+Scotland,Stone,C,600
+Scotland,Solid brick,C,220
+Scotland,Cavity,C,300
+Scotland,Timber frame,C,150
+Scotland,Cob,C,540
+Scotland,System build,C,250
+Scotland,Stone,D,600
+Scotland,Solid brick,D,220
+Scotland,Cavity,D,300
+Scotland,Timber frame,D,250
+Scotland,Cob,D,540
+Scotland,System build,D,250
+Scotland,Stone,E,550
+Scotland,Solid brick,E,240
+Scotland,Cavity,E,300
+Scotland,Timber frame,E,270
+Scotland,Cob,E,540
+Scotland,System build,E,250
+Scotland,Stone,F,520
+Scotland,Solid brick,F,250
+Scotland,Cavity,F,310
+Scotland,Timber frame,F,270
+Scotland,Cob,F,540
+Scotland,System build,F,300
+Scotland,Park home,F,50
+Scotland,Stone,G,520
+Scotland,Solid brick,G,270
+Scotland,Cavity,G,320
+Scotland,Timber frame,G,270
+Scotland,Cob,G,560
+Scotland,System build,G,300
+Scotland,Park home,G,50
+Scotland,Stone,H,520
+Scotland,Solid brick,H,270
+Scotland,Cavity,H,320
+Scotland,Timber frame,H,270
+Scotland,Cob,H,560
+Scotland,System build,H,300
+Scotland,Stone,I,550
+Scotland,Solid brick,I,300
+Scotland,Cavity,I,350
+Scotland,Timber frame,I,300
+Scotland,Cob,I,590
+Scotland,System build,I,300
+Scotland,Park home,I,75
+Scotland,Stone,J,550
+Scotland,Solid brick,J,300
+Scotland,Cavity,J,350
+Scotland,Timber frame,J,300
+Scotland,Cob,J,590
+Scotland,System build,J,300
+Scotland,Park home,J,100
+Scotland,Stone,K,550
+Scotland,Solid brick,K,300
+Scotland,Cavity,K,350
+Scotland,Timber frame,K,300
+Scotland,Cob,K,590
+Scotland,System build,K,300
+Scotland,Park home,K,100
+Scotland,Stone,L,550
+Scotland,Solid brick,L,300
+Scotland,Cavity,L,350
+Scotland,Timber frame,L,300
+Scotland,Cob,L,590
+Scotland,System build,L,300
+Scotland,Park home,L,100
+Northern Ireland,Stone,A,500
+Northern Ireland,Solid brick,A,220
+Northern Ireland,Cavity,A,250
+Northern Ireland,Timber frame,A,150
+Northern Ireland,Cob,A,540
+Northern Ireland,System build,A,250
+Northern Ireland,Stone,B,500
+Northern Ireland,Solid brick,B,220
+Northern Ireland,Cavity,B,250
+Northern Ireland,Timber frame,B,150
+Northern Ireland,Cob,B,540
+Northern Ireland,System build,B,250
+Northern Ireland,Stone,C,500
+Northern Ireland,Solid brick,C,220
+Northern Ireland,Cavity,C,250
+Northern Ireland,Timber frame,C,150
+Northern Ireland,Cob,C,540
+Northern Ireland,System build,C,250
+Northern Ireland,Stone,D,500
+Northern Ireland,Solid brick,D,220
+Northern Ireland,Cavity,D,250
+Northern Ireland,Timber frame,D,250
+Northern Ireland,Cob,D,540
+Northern Ireland,System build,D,250
+Northern Ireland,Stone,E,450
+Northern Ireland,Solid brick,E,240
+Northern Ireland,Cavity,E,250
+Northern Ireland,Timber frame,E,270
+Northern Ireland,Cob,E,540
+Northern Ireland,System build,E,250
+Northern Ireland,Stone,F,420
+Northern Ireland,Solid brick,F,250
+Northern Ireland,Cavity,F,260
+Northern Ireland,Timber frame,F,270
+Northern Ireland,Cob,F,540
+Northern Ireland,System build,F,300
+Northern Ireland,Park home,F,50
+Northern Ireland,Stone,G,420
+Northern Ireland,Solid brick,G,270
+Northern Ireland,Cavity,G,270
+Northern Ireland,Timber frame,G,270
+Northern Ireland,Cob,G,560
+Northern Ireland,System build,G,300
+Northern Ireland,Park home,G,50
+Northern Ireland,Stone,H,420
+Northern Ireland,Solid brick,H,270
+Northern Ireland,Cavity,H,270
+Northern Ireland,Timber frame,H,270
+Northern Ireland,Cob,H,560
+Northern Ireland,System build,H,300
+Northern Ireland,Stone,I,450
+Northern Ireland,Solid brick,I,300
+Northern Ireland,Cavity,I,300
+Northern Ireland,Timber frame,I,300
+Northern Ireland,Cob,I,590
+Northern Ireland,System build,I,300
+Northern Ireland,Park home,I,75
+Northern Ireland,Stone,J,450
+Northern Ireland,Solid brick,J,300
+Northern Ireland,Cavity,J,300
+Northern Ireland,Timber frame,J,300
+Northern Ireland,Cob,J,590
+Northern Ireland,System build,J,300
+Northern Ireland,Park home,J,100
+Northern Ireland,Stone,K,450
+Northern Ireland,Solid brick,K,300
+Northern Ireland,Cavity,K,300
+Northern Ireland,Timber frame,K,300
+Northern Ireland,Cob,K,590
+Northern Ireland,System build,K,300
+Northern Ireland,Park home,K,100
+Northern Ireland,Stone,L,450
+Northern Ireland,Solid brick,L,300
+Northern Ireland,Cavity,L,300
+Northern Ireland,Timber frame,L,300
+Northern Ireland,Cob,L,590
+Northern Ireland,System build,L,300
+Northern Ireland,Park home,L,100

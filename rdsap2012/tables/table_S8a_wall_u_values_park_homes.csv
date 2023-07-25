@@ -1,0 +1,9 @@
+wall_type_detail,age_band,wall_u_value_park_homes,table_notes
+as built,F,1.7,
+as built,G,1.2,
+as built,I,0.7,
+as built,K,0.6,
+additional insulation,F,,Entered U-value (see S1.1.2)
+additional insulation,G,,Entered U-value (see S1.1.2)
+additional insulation,I,,Entered U-value (see S1.1.2)
+additional insulation,K,,Entered U-value (see S1.1.2)

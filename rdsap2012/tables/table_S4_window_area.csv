@@ -1,0 +1,25 @@
+age_band_of_main_dwelling,dwelling_type,window_area_coefficient,window_area_constant
+A,House or Bungalow,0.122,6.875
+B,House or Bungalow,0.122,6.875
+C,House or Bungalow,0.122,6.875
+D,House or Bungalow,0.1294,5.515
+E,House or Bungalow,0.1239,7.332
+F,House or Bungalow,0.1252,5.520
+G,House or Bungalow,0.1356,5.242
+H,House or Bungalow,0.0948,6.534
+I,House or Bungalow,0.1382,-0.027
+J,House or Bungalow,0.1435,-0.403
+K,House or Bungalow,0.1435,-0.403
+L,House or Bungalow,0.1435,-0.403
+A,Flat or Maisonette,0.0801,5.58
+B,Flat or Maisonette,0.0801,5.58
+C,Flat or Maisonette,0.0801,5.58
+D,Flat or Maisonette,0.0341,8.562
+E,Flat or Maisonette,0.0717,6.56
+F,Flat or Maisonette,0.1199,1.975
+G,Flat or Maisonette,0.0510,4.554
+H,Flat or Maisonette,0.0813,3.744
+I,Flat or Maisonette,0.1148,0.392
+J,Flat or Maisonette,0.1148,0.392
+K,Flat or Maisonette,0.1148,0.392
+L,Flat or Maisonette,0.1148,0.392

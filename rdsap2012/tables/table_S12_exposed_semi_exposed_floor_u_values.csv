@@ -1,0 +1,45 @@
+age_band,insulation,u_value,table_notes
+A,insulation unknown or as built,1.2,
+B,insulation unknown or as built,1.2,
+C,insulation unknown or as built,1.2,
+D,insulation unknown or as built,1.2,
+E,insulation unknown or as built,1.2,
+G,insulation unknown or as built,1.2,
+H,insulation unknown or as built,0.51,
+I,insulation unknown or as built,0.51,
+J,insulation unknown or as built,0.25,
+K,insulation unknown or as built,0.22,
+L,insulation unknown or as built,0.22,0.18 W/m2K in Scotland
+A,insulated 50 mm,0.5,Use these values if known to be insulated but insulation thickness not known
+B,insulated 50 mm,0.5,Use these values if known to be insulated but insulation thickness not known
+C,insulated 50 mm,0.5,Use these values if known to be insulated but insulation thickness not known
+D,insulated 50 mm,0.5,Use these values if known to be insulated but insulation thickness not known
+E,insulated 50 mm,0.5,Use these values if known to be insulated but insulation thickness not known
+G,insulated 50 mm,0.5,Use these values if known to be insulated but insulation thickness not known
+H,insulated 50 mm,0.5,Use these values if known to be insulated but insulation thickness not known
+I,insulated 50 mm,0.5,Use these values if known to be insulated but insulation thickness not known
+J,insulated 50 mm,0.25,
+K,insulated 50 mm,0.22,
+L,insulated 50 mm,0.22,0.18 W/m2K in Scotland
+A,insulated 100mm,0.3,
+B,insulated 100mm,0.3,
+C,insulated 100mm,0.3,
+D,insulated 100mm,0.3,
+E,insulated 100mm,0.3,
+G,insulated 100mm,0.3,
+H,insulated 100mm,0.3,
+I,insulated 100mm,0.3,
+J,insulated 100mm,0.25,
+K,insulated 100mm,0.22,
+L,insulated 100mm,0.22,0.18 W/m2K in Scotland
+A,insulated 150 mm,0.22,
+B,insulated 150 mm,0.22,
+C,insulated 150 mm,0.22,
+D,insulated 150 mm,0.22,
+E,insulated 150 mm,0.22,
+G,insulated 150 mm,0.22,
+H,insulated 150 mm,0.22,
+I,insulated 150 mm,0.22,
+J,insulated 150 mm,0.22,
+K,insulated 150 mm,0.22,
+L,insulated 150 mm,0.22,0.18 W/m2K in Scotland

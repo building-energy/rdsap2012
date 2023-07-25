@@ -1,0 +1,10 @@
+party_wall_type,dwelling_type,party_wall_u_value
+solid masonry,,0
+timber frame,,0
+system built,,0
+cavity masonry unfilled,,0.5
+cavity masonry filled,,0.2
+unable to determine,house,0.25
+unable to determine,bungalow,0.25
+unable to determine,flat,0
+unable to determine,maisonette,0

@@ -1,0 +1,27 @@
+insulation_thickness_at_joints_mm,roof_construction,assumed_roof_u_value
+none,slates or tiles,2.3
+12,slates or tiles,1.5
+25,slates or tiles,1
+50,slates or tiles,0.68
+75,slates or tiles,0.5
+100,slates or tiles,0.4
+150,slates or tiles,0.3
+200,slates or tiles,0.21
+250,slates or tiles,0.17
+270,slates or tiles,0.16
+300,slates or tiles,0.14
+350,slates or tiles,0.12
+>=400,slates or tiles,0.11
+none,thatched roof,0.35
+12,thatched roof,0.32
+25,thatched roof,0.3
+50,thatched roof,0.25
+75,thatched roof,0.22
+100,thatched roof,0.2
+150,thatched roof,0.17
+200,thatched roof,0.14
+250,thatched roof,0.12
+270,thatched roof,0.12
+300,thatched roof,0.11
+350,thatched roof,0.1
+>=400,thatched roof,0.09

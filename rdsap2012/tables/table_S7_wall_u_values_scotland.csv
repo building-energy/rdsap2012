@@ -1,0 +1,349 @@
+wall_type_group,wall_type_detail,age_band,wall_u_value_scotland,table_notes
+stone,granite or whinstone as built,A,,see equations in S5.1.1.
+stone,sandstone or limestone as built,A,,see equations in S5.1.1.
+solid brick,as built,A,2.1,
+stone / solid brick,with 50mm external or internal insulation,A,0.6,
+stone / solid brick,with 100mm external or internal insulation,A,0.35,
+stone / solid brick,with 150mm external or internal insulation,A,0.25,
+stone / solid brick,with 200mm external or internal insulation,A,0.18,
+cob,as built,A,0.8,
+cob,with 50mm external or internal insulation,A,0.4,
+cob,with 100mm external or internal insulation,A,0.26,
+cob,with 150mm external or internal insulation,A,0.2,
+cob,with 200mm external or internal insulation,A,0.16,
+cavity,as built,A,2.1,
+unfilled cavity,with 50mm external or internal insulation,A,0.6,
+unfilled cavity,with 100mm external or internal insulation,A,0.35,
+unfilled cavity,with 150mm external or internal insulation,A,0.25,
+unfilled cavity,with 200mm external or internal insulation,A,0.18,
+filled cavity,,A,0.5,
+filled cavity,with 50mm external or internal insulation,A,0.31,
+filled cavity,with 100mm external or internal insulation,A,0.22,
+filled cavity,with 150mm external or internal insulation,A,0.17,
+filled cavity,with 200mm external or internal insulation,A,0.14,
+timber frame,as built,A,2.5,
+timber frame,with internal insulation,A,0.6,
+system build,as built,A,2,
+system build,with 50mm external or internal insulation,A,0.6,
+system build,with 100mm external or internal insulation,A,0.35,
+system build,with 150mm external or internal insulation,A,0.25,
+system build,with 200mm external or internal insulation,A,0.18,
+stone,granite or whinstone as built,B,,see equations in S5.1.1.
+stone,sandstone or limestone as built,B,,see equations in S5.1.1.
+solid brick,as built,B,2.1,
+stone / solid brick,with 50mm external or internal insulation,B,0.6,
+stone / solid brick,with 100mm external or internal insulation,B,0.35,
+stone / solid brick,with 150mm external or internal insulation,B,0.25,
+stone / solid brick,with 200mm external or internal insulation,B,0.18,
+cob,as built,B,0.8,
+cob,with 50mm external or internal insulation,B,0.4,
+cob,with 100mm external or internal insulation,B,0.26,
+cob,with 150mm external or internal insulation,B,0.2,
+cob,with 200mm external or internal insulation,B,0.16,
+cavity,as built,B,1.6,
+unfilled cavity,with 50mm external or internal insulation,B,0.53,
+unfilled cavity,with 100mm external or internal insulation,B,0.32,
+unfilled cavity,with 150mm external or internal insulation,B,0.23,
+unfilled cavity,with 200mm external or internal insulation,B,0.18,
+filled cavity,,B,0.5,
+filled cavity,with 50mm external or internal insulation,B,0.31,
+filled cavity,with 100mm external or internal insulation,B,0.22,
+filled cavity,with 150mm external or internal insulation,B,0.17,
+filled cavity,with 200mm external or internal insulation,B,0.14,
+timber frame,as built,B,1.9,
+timber frame,with internal insulation,B,0.55,
+system build,as built,B,2,
+system build,with 50mm external or internal insulation,B,0.6,
+system build,with 100mm external or internal insulation,B,0.35,
+system build,with 150mm external or internal insulation,B,0.25,
+system build,with 200mm external or internal insulation,B,0.18,
+stone,granite or whinstone as built,C,,see equations in S5.1.1.
+stone,sandstone or limestone as built,C,,see equations in S5.1.1.
+solid brick,as built,C,2.1,
+stone / solid brick,with 50mm external or internal insulation,C,0.6,
+stone / solid brick,with 100mm external or internal insulation,C,0.35,
+stone / solid brick,with 150mm external or internal insulation,C,0.25,
+stone / solid brick,with 200mm external or internal insulation,C,0.18,
+cob,as built,C,0.8,
+cob,with 50mm external or internal insulation,C,0.4,
+cob,with 100mm external or internal insulation,C,0.26,
+cob,with 150mm external or internal insulation,C,0.2,
+cob,with 200mm external or internal insulation,C,0.16,
+cavity,as built,C,1.6,
+unfilled cavity,with 50mm external or internal insulation,C,0.53,
+unfilled cavity,with 100mm external or internal insulation,C,0.32,
+unfilled cavity,with 150mm external or internal insulation,C,0.23,
+unfilled cavity,with 200mm external or internal insulation,C,0.18,
+filled cavity,,C,0.5,
+filled cavity,with 50mm external or internal insulation,C,0.31,
+filled cavity,with 100mm external or internal insulation,C,0.22,
+filled cavity,with 150mm external or internal insulation,C,0.17,
+filled cavity,with 200mm external or internal insulation,C,0.14,
+timber frame,as built,C,1.9,
+timber frame,with internal insulation,C,0.55,
+system build,as built,C,2,
+system build,with 50mm external or internal insulation,C,0.6,
+system build,with 100mm external or internal insulation,C,0.35,
+system build,with 150mm external or internal insulation,C,0.25,
+system build,with 200mm external or internal insulation,C,0.18,
+stone,granite or whinstone as built,D,,see equations in S5.1.1.
+stone,sandstone or limestone as built,D,,see equations in S5.1.1.
+solid brick,as built,D,2.1,
+stone / solid brick,with 50mm external or internal insulation,D,0.6,
+stone / solid brick,with 100mm external or internal insulation,D,0.35,
+stone / solid brick,with 150mm external or internal insulation,D,0.25,
+stone / solid brick,with 200mm external or internal insulation,D,0.18,
+cob,as built,D,0.8,
+cob,with 50mm external or internal insulation,D,0.4,
+cob,with 100mm external or internal insulation,D,0.26,
+cob,with 150mm external or internal insulation,D,0.2,
+cob,with 200mm external or internal insulation,D,0.16,
+cavity,as built,D,1.6,
+unfilled cavity,with 50mm external or internal insulation,D,0.53,
+unfilled cavity,with 100mm external or internal insulation,D,0.32,
+unfilled cavity,with 150mm external or internal insulation,D,0.23,
+unfilled cavity,with 200mm external or internal insulation,D,0.18,
+filled cavity,,D,0.5,
+filled cavity,with 50mm external or internal insulation,D,0.31,
+filled cavity,with 100mm external or internal insulation,D,0.22,
+filled cavity,with 150mm external or internal insulation,D,0.17,
+filled cavity,with 200mm external or internal insulation,D,0.14,
+timber frame,as built,D,1,
+timber frame,with internal insulation,D,0.4,
+system build,as built,D,2,
+system build,with 50mm external or internal insulation,D,0.6,
+system build,with 100mm external or internal insulation,D,0.35,
+system build,with 150mm external or internal insulation,D,0.25,
+system build,with 200mm external or internal insulation,D,0.18,
+stone,granite or whinstone as built,E,1.7,Or from equations in S5.1.1 if that is less
+stone,sandstone or limestone as built,E,1.5,Or from equations in S5.1.1 if that is less
+solid brick,as built,E,1.7,
+stone / solid brick,with 50mm external or internal insulation,E,0.55,
+stone / solid brick,with 100mm external or internal insulation,E,0.35,
+stone / solid brick,with 150mm external or internal insulation,E,0.25,
+stone / solid brick,with 200mm external or internal insulation,E,0.18,
+cob,as built,E,0.8,
+cob,with 50mm external or internal insulation,E,0.4,
+cob,with 100mm external or internal insulation,E,0.26,
+cob,with 150mm external or internal insulation,E,0.2,
+cob,with 200mm external or internal insulation,E,0.16,
+cavity,as built,E,1.6,
+unfilled cavity,with 50mm external or internal insulation,E,0.53,
+unfilled cavity,with 100mm external or internal insulation,E,0.32,
+unfilled cavity,with 150mm external or internal insulation,E,0.23,
+unfilled cavity,with 200mm external or internal insulation,E,0.18,
+filled cavity,,E,0.5,
+filled cavity,with 50mm external or internal insulation,E,0.31,
+filled cavity,with 100mm external or internal insulation,E,0.22,
+filled cavity,with 150mm external or internal insulation,E,0.17,
+filled cavity,with 200mm external or internal insulation,E,0.14,
+timber frame,as built,E,0.8,
+timber frame,with internal insulation,E,0.4,
+system build,as built,E,1.7,
+system build,with 50mm external or internal insulation,E,0.55,
+system build,with 100mm external or internal insulation,E,0.35,
+system build,with 150mm external or internal insulation,E,0.25,
+system build,with 200mm external or internal insulation,E,0.18,
+stone,granite or whinstone as built,F,1,
+stone,sandstone or limestone as built,F,1,
+solid brick,as built,F,1,
+stone / solid brick,with 50mm external or internal insulation,F,0.45,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 100mm external or internal insulation,F,0.32,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 150mm external or internal insulation,F,0.21,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 200mm external or internal insulation,F,0.17,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,as built,F,0.8,
+cob,with 50mm external or internal insulation,F,0.4,
+cob,with 100mm external or internal insulation,F,0.26,
+cob,with 150mm external or internal insulation,F,0.2,
+cob,with 200mm external or internal insulation,F,0.16,
+cavity,as built,F,1,
+unfilled cavity,with 50mm external or internal insulation,F,0.45,
+unfilled cavity,with 100mm external or internal insulation,F,0.3,
+unfilled cavity,with 150mm external or internal insulation,F,0.21,
+unfilled cavity,with 200mm external or internal insulation,F,0.17,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,,F,0.4,
+filled cavity,with 50mm external or internal insulation,F,0.27,
+filled cavity,with 100mm external or internal insulation,F,0.2,
+filled cavity,with 150mm external or internal insulation,F,0.16,
+filled cavity,with 200mm external or internal insulation,F,0.13,
+timber frame,as built,F,0.45,
+timber frame,with internal insulation,F,0.4,
+system build,as built,F,1,
+system build,with 50mm external or internal insulation,F,0.45,
+system build,with 100mm external or internal insulation,F,0.32,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 150mm external or internal insulation,F,0.21,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 200mm external or internal insulation,F,0.17,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone,granite or whinstone as built,G,0.6,
+stone,sandstone or limestone as built,G,0.6,
+solid brick,as built,G,0.6,
+stone / solid brick,with 50mm external or internal insulation,G,0.35,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 100mm external or internal insulation,G,0.24,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 150mm external or internal insulation,G,0.18,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 200mm external or internal insulation,G,0.15,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,as built,G,0.6,
+cob,with 50mm external or internal insulation,G,0.35,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,with 100mm external or internal insulation,G,0.24,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,with 150mm external or internal insulation,G,0.18,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,with 200mm external or internal insulation,G,0.15,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cavity,as built,G,0.6,
+unfilled cavity,with 50mm external or internal insulation,G,0.35,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+unfilled cavity,with 100mm external or internal insulation,G,0.24,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+unfilled cavity,with 150mm external or internal insulation,G,0.18,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+unfilled cavity,with 200mm external or internal insulation,G,0.15,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,,G,0.35,
+filled cavity,with 50mm external or internal insulation,G,0.25,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,with 100mm external or internal insulation,G,0.19,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,with 150mm external or internal insulation,G,0.15,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,with 200mm external or internal insulation,G,0.13,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+timber frame,as built,G,0.4,
+timber frame,with internal insulation,G,0.4,assumed as built
+system build,as built,G,0.6,
+system build,with 50mm external or internal insulation,G,0.35,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 100mm external or internal insulation,G,0.24,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 150mm external or internal insulation,G,0.18,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 200mm external or internal insulation,G,0.15,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone,granite or whinstone as built,H,0.45,
+stone,sandstone or limestone as built,H,0.45,
+solid brick,as built,H,0.45,
+stone / solid brick,with 50mm external or internal insulation,H,0.3,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 100mm external or internal insulation,H,0.24,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 150mm external or internal insulation,H,0.18,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 200mm external or internal insulation,H,0.15,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,as built,H,0.6,
+cob,with 50mm external or internal insulation,H,0.35,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,with 100mm external or internal insulation,H,0.24,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,with 150mm external or internal insulation,H,0.18,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,with 200mm external or internal insulation,H,0.15,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cavity,as built,H,0.45,
+unfilled cavity,with 50mm external or internal insulation,H,0.3,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+unfilled cavity,with 100mm external or internal insulation,H,0.21,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+unfilled cavity,with 150mm external or internal insulation,H,0.17,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+unfilled cavity,with 200mm external or internal insulation,H,0.15,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,,H,0.45,
+filled cavity,with 50mm external or internal insulation,H,0.25,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,with 100mm external or internal insulation,H,0.19,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,with 150mm external or internal insulation,H,0.15,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,with 200mm external or internal insulation,H,0.13,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+timber frame,as built,H,0.4,
+timber frame,with internal insulation,H,0.4,assumed as built
+system build,as built,H,0.45,
+system build,with 50mm external or internal insulation,H,0.3,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 100mm external or internal insulation,H,0.24,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 150mm external or internal insulation,H,0.18,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 200mm external or internal insulation,H,0.15,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone,granite or whinstone as built,I,0.45,
+stone,sandstone or limestone as built,I,0.45,
+solid brick,as built,I,0.45,
+stone / solid brick,with 50mm external or internal insulation,I,0.3,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 100mm external or internal insulation,I,0.21,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 150mm external or internal insulation,I,0.17,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 200mm external or internal insulation,I,0.14,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,as built,I,0.45,
+cob,with 50mm external or internal insulation,I,0.3,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,with 100mm external or internal insulation,I,0.21,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,with 150mm external or internal insulation,I,0.17,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,with 200mm external or internal insulation,I,0.14,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cavity,as built,I,0.45,
+unfilled cavity,with 50mm external or internal insulation,I,0.3,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+unfilled cavity,with 100mm external or internal insulation,I,0.21,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+unfilled cavity,with 150mm external or internal insulation,I,0.17,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+unfilled cavity,with 200mm external or internal insulation,I,0.14,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,,I,0.45,assumed as built
+filled cavity,with 50mm external or internal insulation,I,0.25,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,with 100mm external or internal insulation,I,0.19,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,with 150mm external or internal insulation,I,0.15,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,with 200mm external or internal insulation,I,0.13,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+timber frame,as built,I,0.4,
+timber frame,with internal insulation,I,0.4,assumed as built
+system build,as built,I,0.45,
+system build,with 50mm external or internal insulation,I,0.3,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 100mm external or internal insulation,I,0.21,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 150mm external or internal insulation,I,0.17,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 200mm external or internal insulation,I,0.14,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone,granite or whinstone as built,J,0.3,
+stone,sandstone or limestone as built,J,0.3,
+solid brick,as built,J,0.3,
+stone / solid brick,with 50mm external or internal insulation,J,0.21,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 100mm external or internal insulation,J,0.19,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 150mm external or internal insulation,J,0.15,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 200mm external or internal insulation,J,0.13,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,as built,J,0.3,
+cob,with 50mm external or internal insulation,J,0.21,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,with 100mm external or internal insulation,J,0.19,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,with 150mm external or internal insulation,J,0.15,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,with 200mm external or internal insulation,J,0.13,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cavity,as built,J,0.3,
+unfilled cavity,with 50mm external or internal insulation,J,0.25,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+unfilled cavity,with 100mm external or internal insulation,J,0.19,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+unfilled cavity,with 150mm external or internal insulation,J,0.15,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+unfilled cavity,with 200mm external or internal insulation,J,0.13,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,,J,0.3,assumed as built
+filled cavity,with 50mm external or internal insulation,J,0.25,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,with 100mm external or internal insulation,J,0.19,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,with 150mm external or internal insulation,J,0.15,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,with 200mm external or internal insulation,J,0.13,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+timber frame,as built,J,0.3,
+timber frame,with internal insulation,J,0.3,assumed as built
+system build,as built,J,0.3,
+system build,with 50mm external or internal insulation,J,0.21,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 100mm external or internal insulation,J,0.19,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 150mm external or internal insulation,J,0.15,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 200mm external or internal insulation,J,0.13,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone,granite or whinstone as built,K,0.25,
+stone,sandstone or limestone as built,K,0.25,
+solid brick,as built,K,0.25,
+stone / solid brick,with 50mm external or internal insulation,K,0.19,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 100mm external or internal insulation,K,0.17,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 150mm external or internal insulation,K,0.14,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 200mm external or internal insulation,K,0.12,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,as built,K,0.25,
+cob,with 50mm external or internal insulation,K,0.19,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,with 100mm external or internal insulation,K,0.17,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,with 150mm external or internal insulation,K,0.14,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,with 200mm external or internal insulation,K,0.12,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cavity,as built,K,0.25,
+unfilled cavity,with 50mm external or internal insulation,K,0.19,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+unfilled cavity,with 100mm external or internal insulation,K,0.17,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+unfilled cavity,with 150mm external or internal insulation,K,0.14,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+unfilled cavity,with 200mm external or internal insulation,K,0.12,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,,K,0.25,assumed as built
+filled cavity,with 50mm external or internal insulation,K,0.19,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,with 100mm external or internal insulation,K,0.17,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,with 150mm external or internal insulation,K,0.14,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,with 200mm external or internal insulation,K,0.12,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+timber frame,as built,K,0.25,
+timber frame,with internal insulation,K,0.25,assumed as built
+system build,as built,K,0.25,
+system build,with 50mm external or internal insulation,K,0.19,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 100mm external or internal insulation,K,0.17,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 150mm external or internal insulation,K,0.14,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 200mm external or internal insulation,K,0.12,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone,granite or whinstone as built,L,0.22,
+stone,sandstone or limestone as built,L,0.22,
+solid brick,as built,L,0.22,
+stone / solid brick,with 50mm external or internal insulation,L,0.17,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 100mm external or internal insulation,L,0.14,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 150mm external or internal insulation,L,0.12,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+stone / solid brick,with 200mm external or internal insulation,L,0.1,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,as built,L,0.22,
+cob,with 50mm external or internal insulation,L,0.17,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,with 100mm external or internal insulation,L,0.14,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,with 150mm external or internal insulation,L,0.12,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cob,with 200mm external or internal insulation,L,0.1,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+cavity,as built,L,0.22,
+unfilled cavity,with 50mm external or internal insulation,L,0.17,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+unfilled cavity,with 100mm external or internal insulation,L,0.14,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+unfilled cavity,with 150mm external or internal insulation,L,0.12,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+unfilled cavity,with 200mm external or internal insulation,L,0.1,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,,L,0.22,assumed as built
+filled cavity,with 50mm external or internal insulation,L,0.17,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,with 100mm external or internal insulation,L,0.14,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,with 150mm external or internal insulation,L,0.12,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+filled cavity,with 200mm external or internal insulation,L,0.1,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+timber frame,as built,L,0.22,
+timber frame,with internal insulation,L,0.22,assumed as built
+system build,as built,L,0.22,
+system build,with 50mm external or internal insulation,L,0.17,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 100mm external or internal insulation,L,0.14,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 150mm external or internal insulation,L,0.12,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)
+system build,with 200mm external or internal insulation,L,0.1,wall may have had internal or external insulation when originally built; this applies only if insulation is known to have been increased subsequently (otherwise `as built` applies)

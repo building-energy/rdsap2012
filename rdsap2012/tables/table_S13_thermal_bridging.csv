@@ -1,0 +1,23 @@
+age_band,dwelling_type,thermal_bridging_factor
+A,not park home,0.15
+B,not park home,0.15
+C,not park home,0.15
+D,not park home,0.15
+E,not park home,0.15
+G,not park home,0.15
+H,not park home,0.15
+I,not park home,0.15
+J,not park home,0.11
+K,not park home,0.08
+L,not park home,0.08
+A,park home,0.15
+B,park home,0.15
+C,park home,0.15
+D,park home,0.15
+E,park home,0.15
+G,park home,0.15
+H,park home,0.15
+I,park home,0.15
+J,park home,0.15
+K,park home,0.15
+L,park home,0.15

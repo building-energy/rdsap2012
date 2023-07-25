@@ -1,0 +1,166 @@
+age_band,country,dwelling_type,years_of_construction
+A,England & Wales,house,before 1900
+B,England & Wales,house,1900-1929
+C,England & Wales,house,1930-1949
+D,England & Wales,house,1950-1966
+E,England & Wales,house,1967-1975
+F,England & Wales,house,1976-1982
+G,England & Wales,house,1983-1990
+H,England & Wales,house,1991-1995
+I,England & Wales,house,1996-2002
+J,England & Wales,house,2003-2006
+K,England & Wales,house,2007-2011
+L,England & Wales,house,2012 onwards
+A,Scotland,house,before 1919
+B,Scotland,house,1919-1929
+C,Scotland,house,1930-1949
+D,Scotland,house,1950-1964
+E,Scotland,house,1965-1975
+F,Scotland,house,1976-1983
+G,Scotland,house,1984-1991
+H,Scotland,house,1992-1998
+I,Scotland,house,1999-2002
+J,Scotland,house,2003-2007
+K,Scotland,house,2008-2011
+L,Scotland,house,2012 onwards
+A,Northern Ireland,house,before 1919
+B,Northern Ireland,house,1919-1926
+C,Northern Ireland,house,1930-1949
+D,Northern Ireland,house,1950-1973
+E,Northern Ireland,house,1974-1977
+F,Northern Ireland,house,1978-1985
+G,Northern Ireland,house,1986-1991
+H,Northern Ireland,house,1992-1999
+I,Northern Ireland,house,2000-2006
+J,Northern Ireland,house,not applicable
+K,Northern Ireland,house,2007-2013
+L,Northern Ireland,house,2014 onwards
+A,England & Wales,bungalow,before 1900
+B,England & Wales,bungalow,1900-1929
+C,England & Wales,bungalow,1930-1949
+D,England & Wales,bungalow,1950-1966
+E,England & Wales,bungalow,1967-1975
+F,England & Wales,bungalow,1976-1982
+G,England & Wales,bungalow,1983-1990
+H,England & Wales,bungalow,1991-1995
+I,England & Wales,bungalow,1996-2002
+J,England & Wales,bungalow,2003-2006
+K,England & Wales,bungalow,2007-2011
+L,England & Wales,bungalow,2012 onwards
+A,Scotland,bungalow,before 1919
+B,Scotland,bungalow,1919-1929
+C,Scotland,bungalow,1930-1949
+D,Scotland,bungalow,1950-1964
+E,Scotland,bungalow,1965-1975
+F,Scotland,bungalow,1976-1983
+G,Scotland,bungalow,1984-1991
+H,Scotland,bungalow,1992-1998
+I,Scotland,bungalow,1999-2002
+J,Scotland,bungalow,2003-2007
+K,Scotland,bungalow,2008-2011
+L,Scotland,bungalow,2012 onwards
+A,Northern Ireland,bungalow,before 1919
+B,Northern Ireland,bungalow,1919-1926
+C,Northern Ireland,bungalow,1930-1949
+D,Northern Ireland,bungalow,1950-1973
+E,Northern Ireland,bungalow,1974-1977
+F,Northern Ireland,bungalow,1978-1985
+G,Northern Ireland,bungalow,1986-1991
+H,Northern Ireland,bungalow,1992-1999
+I,Northern Ireland,bungalow,2000-2006
+J,Northern Ireland,bungalow,not applicable
+K,Northern Ireland,bungalow,2007-2013
+L,Northern Ireland,bungalow,2014 onwards
+A,England & Wales,flat,before 1900
+B,England & Wales,flat,1900-1929
+C,England & Wales,flat,1930-1949
+D,England & Wales,flat,1950-1966
+E,England & Wales,flat,1967-1975
+F,England & Wales,flat,1976-1982
+G,England & Wales,flat,1983-1990
+H,England & Wales,flat,1991-1995
+I,England & Wales,flat,1996-2002
+J,England & Wales,flat,2003-2006
+K,England & Wales,flat,2007-2011
+L,England & Wales,flat,2012 onwards
+A,Scotland,flat,before 1919
+B,Scotland,flat,1919-1929
+C,Scotland,flat,1930-1949
+D,Scotland,flat,1950-1964
+E,Scotland,flat,1965-1975
+F,Scotland,flat,1976-1983
+G,Scotland,flat,1984-1991
+H,Scotland,flat,1992-1998
+I,Scotland,flat,1999-2002
+J,Scotland,flat,2003-2007
+K,Scotland,flat,2008-2011
+L,Scotland,flat,2012 onwards
+A,Northern Ireland,flat,before 1919
+B,Northern Ireland,flat,1919-1926
+C,Northern Ireland,flat,1930-1949
+D,Northern Ireland,flat,1950-1973
+E,Northern Ireland,flat,1974-1977
+F,Northern Ireland,flat,1978-1985
+G,Northern Ireland,flat,1986-1991
+H,Northern Ireland,flat,1992-1999
+I,Northern Ireland,flat,2000-2006
+J,Northern Ireland,flat,not applicable
+K,Northern Ireland,flat,2007-2013
+L,Northern Ireland,flat,2014 onwards
+A,England & Wales,maisonette,before 1900
+B,England & Wales,maisonette,1900-1929
+C,England & Wales,maisonette,1930-1949
+D,England & Wales,maisonette,1950-1966
+E,England & Wales,maisonette,1967-1975
+F,England & Wales,maisonette,1976-1982
+G,England & Wales,maisonette,1983-1990
+H,England & Wales,maisonette,1991-1995
+I,England & Wales,maisonette,1996-2002
+J,England & Wales,maisonette,2003-2006
+K,England & Wales,maisonette,2007-2011
+L,England & Wales,maisonette,2012 onwards
+A,Scotland,maisonette,before 1919
+B,Scotland,maisonette,1919-1929
+C,Scotland,maisonette,1930-1949
+D,Scotland,maisonette,1950-1964
+E,Scotland,maisonette,1965-1975
+F,Scotland,maisonette,1976-1983
+G,Scotland,maisonette,1984-1991
+H,Scotland,maisonette,1992-1998
+I,Scotland,maisonette,1999-2002
+J,Scotland,maisonette,2003-2007
+K,Scotland,maisonette,2008-2011
+L,Scotland,maisonette,2012 onwards
+A,Northern Ireland,maisonette,before 1919
+B,Northern Ireland,maisonette,1919-1926
+C,Northern Ireland,maisonette,1930-1949
+D,Northern Ireland,maisonette,1950-1973
+E,Northern Ireland,maisonette,1974-1977
+F,Northern Ireland,maisonette,1978-1985
+G,Northern Ireland,maisonette,1986-1991
+H,Northern Ireland,maisonette,1992-1999
+I,Northern Ireland,maisonette,2000-2006
+J,Northern Ireland,maisonette,not applicable
+K,Northern Ireland,maisonette,2007-2013
+L,Northern Ireland,maisonette,2014 onwards
+F,England & Wales,park home,before 1983
+G,England & Wales,park home,1983-1995
+H,England & Wales,park home,not applicable
+I,England & Wales,park home,1996-2005
+J,England & Wales,park home,not applicable
+K,England & Wales,park home,2006 onwards
+L,England & Wales,park home,not applicable
+F,Scotland,park home,before 1983
+G,Scotland,park home,1983-1995
+H,Scotland,park home,not applicable
+I,Scotland,park home,1996-2005
+J,Scotland,park home,not applicable
+K,Scotland,park home,2006 onwards
+L,Scotland,park home,not applicable
+F,Northern Ireland,park home,before 1983
+G,Northern Ireland,park home,1983-1995
+H,Northern Ireland,park home,not applicable
+I,Northern Ireland,park home,1996-2005
+J,Northern Ireland,park home,not applicable
+K,Northern Ireland,park home,2006 onwards
+L,Northern Ireland,park home,not applicable
