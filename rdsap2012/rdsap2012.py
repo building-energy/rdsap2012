@@ -8,6 +8,48 @@ Created on Tue Jul 18 13:51:21 2023
 #%% import packages
 import csv
 import os
+import copy
+
+
+#%% main function
+
+def run_rdsap(
+        input_file_or_data,
+        validate=False
+        ):
+    """
+    
+    """
+
+    # get input data
+    if isinstance(input_file_or_data, str):
+        
+        input_file = input_file_or_data
+        #load input file - to do
+        
+    elif isinstance(input_file_or_data,dict):
+        
+        input_data = input_file_or_data
+    
+    else:
+        
+        raise Exception
+    
+    # validation
+    if validate:
+        
+        pass
+        # do validation on input file using json schema
+        
+    # set working data
+    working_data = copy.deepcopy(input_data)
+    
+    # set output data
+    output_data = {}
+    
+    
+    # S3 Areas
+    working_data, output_data = run_infer_areas(working_data, output_data)
 
 
 

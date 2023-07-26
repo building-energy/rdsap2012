@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/building-energy/sap2012/master/sap2012/SAP_input_schema/rdSAP_2012_input_schema.json",
+    "$schema": "https://raw.githubusercontent.com/building-energy/rdsap2012/main/rdsap2012/input_file_json_schema/rdSAP_2012_input_schema.json",
     "whole_dwelling": {
         "country": "England & Wales",
         "region": "Midlands",
