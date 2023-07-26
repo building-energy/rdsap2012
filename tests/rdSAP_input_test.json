@@ -9,7 +9,7 @@
         "built_form_and_detachment": "detached",
         "number_of_habitable_rooms": 6,
         "number_of_heated_habitable_rooms": 6,
-        "dimension_type": "measured_externally",
+        "dimension_type": "measured externally",
         "conservatory":"no conservatory",
         "conservatory_details": "not applicable",
         "flats_and_maisonettes_details":"not applicable",
@@ -78,13 +78,13 @@
                     "area":100, 
                     "average_room_height":2, 
                     "exposed_perimeter":40, 
-                    "party_wall_length:0"
+                    "party_wall_length": "not applicable"
                 },
                 "lowest_occupied_floor_plus_1": {
                     "area":100, 
                     "average_room_height":2, 
                     "exposed_perimeter":40, 
-                    "party_wall_length:0"
+                    "party_wall_length": "not applicable"
                 },
                 "lowest_occupied_floor_plus_2":"not applicable",
                 "lowest_occupied_floor_plus_3":"not applicable",

@@ -9,7 +9,10 @@ Created on Tue Jul 18 13:51:21 2023
 import csv
 import os
 import copy
+import json
+import importlib.resources as pkg_resources
 
+from . import tables
 
 #%% main function
 
@@ -22,10 +25,70 @@ def run_rdsap(
     """
 
     # get input data
+    input_data=_get_input_data(input_file_or_data)
+    
+    # validation
+    if validate:
+        
+        _validate_input_data(
+            input_data
+            )
+        
+    # set working data
+    working_data = copy.deepcopy(input_data)
+    
+    # set output data
+    output_data = {}
+    
+    # S3 Areas
+    working_data = \
+        _infer_areas(
+            working_data, 
+            )
+
+
+def _infer_areas(
+        working_data, 
+        ):
+    """
+    """
+    
+    working_data = \
+        _adjustment_to_levels_of_storeys_for_houses_and_bungalows(
+            working_data
+            )
+        
+    working_data = \
+        _storey_height(
+            working_data
+            )
+        
+    working_data = \
+        _wall_thickness(
+            working_data
+            )
+        
+    working_data = \
+        _convert_dimensions(
+            working_data
+            )
+    
+    return working_data    
+
+
+
+def _get_input_data(
+        input_file_or_data
+        ):
+    """
+    """
     if isinstance(input_file_or_data, str):
         
         input_file = input_file_or_data
-        #load input file - to do
+        
+        with open(input_file) as f:
+            
+            input_data = json.load(f)
         
     elif isinstance(input_file_or_data,dict):
         
@@ -34,23 +97,16 @@ def run_rdsap(
     else:
         
         raise Exception
-    
-    # validation
-    if validate:
         
-        pass
-        # do validation on input file using json schema
-        
-    # set working data
-    working_data = copy.deepcopy(input_data)
-    
-    # set output data
-    output_data = {}
-    
-    
-    # S3 Areas
-    working_data, output_data = run_infer_areas(working_data, output_data)
+    return input_data
 
+
+def _validate_input_data(
+        input_data
+        ):
+    """
+    """
+    # TO DO
 
 
 #%% Appendix S: Reduced Data SAP for existing dwellings
@@ -148,14 +204,17 @@ def insulation_improvement_for_park_homes(
 def get_table_S1_age_bands():
     ""
     d={}
-    fp=os.path.join('tables','table_S1_age_bands.csv')
+    fp=os.path.join(
+        pkg_resources.files(tables),
+        'table_S1_age_bands.csv'
+        )
     for x in list(csv.DictReader(open(fp))):
         d.setdefault(x['age_band'],{}).setdefault(x['country'],{}) \
             [x['dwelling_type']]=x['years_of_construction']
     return d
 
 table_S1_age_bands=get_table_S1_age_bands()
-print(table_S1_age_bands)
+#print(table_S1_age_bands)
 
 # "From the 1960s, constructional changes have been caused primarily by 
 # amendments to building regulations for the conservation of fuel and power, 
@@ -279,9 +338,61 @@ print(table_S1_age_bands)
 
 # S3.4 Adjustment to levels of storeys for houses and bungalows
 
-# In the RdSAP data set, the dimensions of each building part start at “lowest occupied” and these may not align if a building part has a heated or unheated space below. If the lowest occupied floor of any extension is not a ground floor increase the level of each storey in that building part by 1.
+# In the RdSAP data set, the dimensions of each building part 
+# start at “lowest occupied” and these may not align if a building
+# part has a heated or unheated space below. 
+# If the lowest occupied floor of any extension is not a ground 
+# floor increase the level of each storey in that building part 
+# by 1.
 
-# TO DO ?? "increase the level of each storey in tht building part by 1..."
+
+def _adjustment_to_levels_of_storeys_for_houses_and_bungalows(
+        working_data
+        ):
+    """
+    
+    SKF notes:
+        - made this apply for houses and bungalows only
+        - possible error in SAP doument here - what if
+            the storey doesn't start on the first floor?
+    
+    """
+    
+    dwelling_type=working_data['whole_dwelling']['dwelling_type']
+
+    # add `level` item to all levels
+    for building_part in working_data['building_parts'].values():
+    
+        if not building_part == 'not applicable':
+        
+            dimensions_dict=building_part['dimensions']
+            
+            below_the_building_part=building_part['below_the_building_part']
+            
+            for i,k in enumerate(
+                    ['lowest_occupied_floor',
+                     'lowest_occupied_floor_plus_1',
+                     'lowest_occupied_floor_plus_2',
+                     'lowest_occupied_floor_plus_3',
+                     'lowest_occupied_floor_plus_4',
+                     'lowest_occupied_floor_plus_5',
+                     'lowest_occupied_floor_plus_6'
+                     ]):
+                
+                d=dimensions_dict[k]
+                
+                if not d=='not applicable':
+                    
+                    if dwelling_type in ['house','bungalow'] and \
+                        not below_the_building_part=='ground floor':
+                        
+                            d['level']=i+1
+                    
+                    else:
+                        
+                        d['level']=i
+                
+    return working_data
 
 
 # S3.5 Conversion to internal dimensions
@@ -290,11 +401,11 @@ print(table_S1_age_bands)
 
 # Heights are always measured internally within each room and handled by software according to S3.6.
 
-def table_S2_conversion_of_dimensions_1(
+def _table_S2_conversion_of_dimensions(
         built_form_and_detachment,
-        P_ext,  # measured external perimeter (of whole dwelling)
-        A_ext,  # measured external area
-        w  # wall thickness
+        P_ext,  # measured external perimeter (of whole dwelling) in m
+        A_ext,  # measured external area in m2
+        w  # wall thickness in mm
         ):
     """
     p9
@@ -305,6 +416,9 @@ def table_S2_conversion_of_dimensions_1(
         3. w is the wall thickness of the main dwelling
     
     """
+    
+    w = w / 1000  # converts mm to m
+    
     if built_form_and_detachment == 'detached':
         
         P_int = P_ext - 8 * w
@@ -343,52 +457,143 @@ def table_S2_conversion_of_dimensions_1(
     
     area_ratio = A_int / A_ext
     
-    return P_ext, A_ext, perimeter_ratio, area_ratio
+    return P_int, A_int, perimeter_ratio, area_ratio
 
 
-def table_S2_conversion_of_dimensions_2(
-        area,
-        exposed_perimeter,
-        party_wall_length,
-        area_ratio,
-        perimeter_ratio,
-        wall_thickness
+
+def _convert_dimensions(
+        working_data
         ):
     """
-    p9
-    
-    Notes:
-        4. After obtaining the perimeter ratio and area ratio for the whole dwelling, multiply
-        separately the measured perimeters and areas of (a) the main part of the dwelling
-        and (b) any extension, by these ratios.
-        5. In the case of a party wall reduce its length by 2w
-    
-    
     """
-
-    area_internal = area * area_ratio
     
-    exposed_perimeter_internal = exposed_perimeter * perimeter_ratio
+    built_form_and_detachment = \
+        working_data['whole_dwelling']['built_form_and_detachment']
     
-    party_wall_length_internal = party_wall_length - (2 * wall_thickness)
+    dimension_type = working_data['whole_dwelling']['dimension_type']
     
-    return area_internal, exposed_perimeter_internal, party_wall_length_internal
+    w = working_data['building_parts']['main_dwelling']['wall_thickness2']
+    
+    for level in range(0,8):
+        
+        #print('level',level)
+        
+        if dimension_type == 'measured externally':
+            
+            # whole dwelling exposed perimeter and area (for each level)
+            P_ext=0
+            A_ext=0
+            for building_part in working_data['building_parts'].values():
+                if not building_part == 'not applicable':
+                    dimensions_dict=building_part['dimensions']
+                    for v in dimensions_dict.values():
+                        if not v == 'not applicable':
+                            if v['level'] == level:
+                                P_ext += v['exposed_perimeter']
+                                A_ext += v['area']
+            
+            #print('P_ext',P_ext)
+            #print('A_ext',A_ext)
+            
+            if P_ext == 0 or A_ext == 0:
+                
+                continue
+            
+            P_int, A_int, perimeter_ratio, area_ratio = \
+                _table_S2_conversion_of_dimensions(
+                    built_form_and_detachment,
+                    P_ext,  
+                    A_ext,  
+                    w 
+                    )
+                
+            #print(P_int, A_int, perimeter_ratio, area_ratio)
+                
+            party_wall_modifier = 2 * w
+            
+        else:  # 'measured internally'
+        
+            perimeter_ratio = 1
+            area_ratio = 1
+            party_wall_modifier = 0
+            
+        # set internal perimeters and areas
+        for building_part in working_data['building_parts'].values():
+            if not building_part == 'not applicable':
+                dimensions_dict=building_part['dimensions']
+                
+                for v in dimensions_dict.values():
+                    if not v == 'not applicable':
+                        if v['level'] == level:
+                            v['exposed_perimeter_internal']=\
+                                v['exposed_perimeter'] * perimeter_ratio
+                            v['area_internal']=\
+                                v['area'] * area_ratio
+                            if v['party_wall_length'] == 'not applicable':
+                                v['party_wall_length_internal']=\
+                                    'not applicable'
+                            else:
+                                v['party_wall_length_internal']=\
+                                    v['party_wall_length'] - party_wall_modifier
+        
+    return working_data
 
 
-def get_table_S3_wall_thickness():
+
+def _get_table_S3_wall_thickness():
     ""
     d={}
-    fp=os.path.join('tables','table_S3_wall_thickness.csv')
+    fp=os.path.join(
+        pkg_resources.files(tables),
+        'table_S3_wall_thickness.csv'
+        )
     for x in list(csv.DictReader(open(fp))):
         d.setdefault(x['country'],{}).setdefault(x['wall_type'],{}) \
-            [x['age_band']]=x['wall_thickness']
+            [x['age_band']]=int(x['wall_thickness'])
     return d
 
-table_S3_wall_thickness=get_table_S3_wall_thickness()
-print(table_S3_wall_thickness)
+table_S3_wall_thickness=_get_table_S3_wall_thickness()
+#print(table_S3_wall_thickness)
 
 # The values in Table S3 are used only when the wall thickness could not be measured.
     
+
+def _wall_thickness(
+        working_data
+        ):
+    """
+    """
+    
+    country = working_data['whole_dwelling']['country']
+    
+    for building_part in working_data['building_parts'].values():
+    
+        if not building_part == 'not applicable':
+       
+            age_band = building_part['age_band']     
+       
+            wall_construction = building_part['wall_construction']
+       
+            wall_thickness = building_part['wall_thickness']
+            
+            if wall_thickness == 'unknown':
+                
+                wall_thickness2 = \
+                    table_S3_wall_thickness[country][wall_construction][age_band]
+            
+            else:
+                
+                wall_thickness2 = wall_thickness
+            
+            building_part['wall_thickness2'] = wall_thickness2
+                
+       
+        
+    return working_data
+
+
+
+
 # Wall thickness
 
 # Measure wall thickness in mm of each external wall (elevation) and any alternative wall within a building part.
@@ -408,24 +613,32 @@ print(table_S3_wall_thickness)
 # The lowest storey of a building part is the lowest for the dwelling 
 # unless it has been indicated as having the same dwelling below. 
 
-def storey_height(
-        average_room_height,
-        is_lowest_storey  # boolean - true if this is the lowst storey in the building part
-        ):
+def _storey_height(
+        working_data):
     """
     p10
     
     """
+    for building_part in working_data['building_parts'].values():
     
-    if is_lowest_storey:
+        if not building_part == 'not applicable':
         
-        storey_height = average_room_height
-        
-    else:
-        
-        storey_height = average_room_height + 0.25
-        
-    return storey_height
+           dimensions_dict=building_part['dimensions']
+           
+           for k, v in dimensions_dict.items():
+               
+               if not v == 'not applicable':
+                   
+                   if k=='lowest_occupied_floor':
+                       
+                       v['storey_height'] = v['average_room_height']
+                       
+                   else:
+                    
+                       v['storey_height'] = v['average_room_height'] + 0.25
+    
+    
+    return working_data
 
 # Gross areas (inclusive of openings) are obtained from the product of heat 
 # loss perimeter (after conversion to internal dimensions if relevant) and 
@@ -512,12 +725,38 @@ def net_sheltered_wall_area(
 # The area of an external door is taken as 1.85 m². 
 # A door to a heated access corridor is not included in the door count.
 
-def door_area(
-        number_of_external_doors
+def _door_area(
+        working_data
         ):
     """
     """
-    return number_of_external_doors * 1.85
+    number_of_external_doors = working_data['whole_dwelling']['number_of_external_doors']
+    
+    # check for sheltered wall
+    try:
+        x=working_data['whole_dwelling']['flats_and_maisonettes_details']['length_of_sheltered_wall']
+        if x > 0:
+            has_sheltered_wall = True
+        else:
+            has_sheltered_wall = False
+    except (KeyError, TypeError):
+        has_sheltered_wall = False
+    
+    #
+    if has_sheltered_wall:
+        door_area = (number_of_external_doors -1) * 1.85
+        door_area_sheltered = 1.85
+    else:
+        door_area = number_of_external_doors * 1.85
+        door_area_sheltered = 0
+    
+    #
+    working_data['whole_dwelling']['door_area'] = \
+        door_area
+    working_data['whole_dwelling']['door_area_sheltered'] = \
+        door_area_sheltered
+    
+    return working_data
     
 
 # External doors except doors to an unheated corridor or stairwell are 
@@ -566,7 +805,10 @@ def door_area(
 def get_table_S4_window_area():
     ""
     d={}
-    fp=os.path.join('tables','table_S4_window_area.csv')
+    fp=os.path.join(
+        pkg_resources.files(tables),
+        'table_S4_window_area.csv'
+        )
     for x in list(csv.DictReader(open(fp))):
         y=d.setdefault(x['age_band_of_main_dwelling'],{}).setdefault(x['dwelling_type'],{})
         y['window_area_coefficient']=x['window_area_coefficient']
@@ -574,7 +816,7 @@ def get_table_S4_window_area():
     return d
 
 table_S4_window_area=get_table_S4_window_area()
-print(table_S4_window_area)
+#print(table_S4_window_area)
 
 
 def window_area(
@@ -632,22 +874,22 @@ def window_area(
 # Record method used in site notes.
 
 # Two types of window are allowed for, single and multiple glazed. Multiple glazing can be double glazed units
-installed before 20021, double glazed units installed during/after 20021, double glazing unknown date, secondary
-glazing or triple glazing. For multiple glazing the U-value can be known.
+# installed before 20021, double glazed units installed during/after 20021, double glazing unknown date, secondary
+# glazing or triple glazing. For multiple glazing the U-value can be known.
 
 # ---
 # If more than one of type of multiple glazing is present, the assessor selects the type according to what is
-the most prevalent in the dwelling.
-If single glazing with secondary glazing, record as secondary glazing.
-If double glazing with secondary glazing, record as newer double glazing (i.e. later than the date in
-footnote 1).
-If secondary glazing has been removed in summer, enter as secondary glazing only if assessor can
-confirm that the panels exist and can be re-fitted. Evidence to be recorded on site notes.
+# the most prevalent in the dwelling.
+# If single glazing with secondary glazing, record as secondary glazing.
+# If double glazing with secondary glazing, record as newer double glazing (i.e. later than the date in
+# footnote 1).
+# If secondary glazing has been removed in summer, enter as secondary glazing only if assessor can
+# confirm that the panels exist and can be re-fitted. Evidence to be recorded on site notes.
 # ---
 
 # The window area of each part of the dwelling (main, extension 1, extension 2 etc) is divided into two areas, single
-and multiple, according to the assessor's estimate of the multiple-glazed percentage. The same percentage is used in
-main dwelling and each extension.
+# and multiple, according to the assessor's estimate of the multiple-glazed percentage. The same percentage is used in
+# main dwelling and each extension.
 
 
 # S3.7.2 Window area much more or much less than typical, and park homes
@@ -679,8 +921,6 @@ main dwelling and each extension.
 
 
 # S3.13 Sheltered walls for flats and maisonettes
-
-
 
 
 

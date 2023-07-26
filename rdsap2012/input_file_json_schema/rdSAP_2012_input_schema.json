@@ -175,8 +175,8 @@
                     "title":"Dimension type",
                     "description": "Measured_internally_or_externally. Applies to areas and perimiters. Room heights always measured internally within the room. See S3.",
                     "enum": [
-                        "measured_internally",
-                        "measured_externally"
+                        "measured internally",
+                        "measured externally"
                     ]
                 },
                 "conservatory": {
@@ -1405,7 +1405,7 @@
                 "rafter_insulation_thickness",
                 "flat_roof_insulation_thickness",
                 "sloping_ceiling_insulation_thickness",
-                "roof_U_value",
+                "roof_u_value",
                 "roof_room_age_band",
                 "roof_rooms_connected",
                 "roof_room_insulation",
@@ -1973,8 +1973,15 @@
         "wall_thickness": {
             "title": "Wall thickness",
             "description": "Wall thickness in mm (or unknown if it cannot be measured. Where thickness varies for the same construction use the average of the measured values.",
-            "type": "number",
-            "minimum": 0
+            "oneOf": [
+                {
+                    "const": "unknown"
+                },
+                {
+                    "type": "number",
+                    "minimum": 0
+                }
+            ]
         },
         "wall_insulation_type": {
             "title": "Wall insulation type",
