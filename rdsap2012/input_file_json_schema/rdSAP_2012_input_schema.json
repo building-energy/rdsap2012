@@ -434,7 +434,7 @@
                     "description": "If window area is much less or much more than typical. For each window. This option can also be used if more than one type of multiple glazing.",
                     "oneOf": [
                         {
-                            "const": "Not applicable"
+                            "const": "not applicable"
                         },
                         {
                             "type": "array",
@@ -1928,7 +1928,7 @@
         },
         "dimensions": {
             "type": "object",
-            "required": ["area", "average_room_height", "exposed_perimieter", "party_wall_length"],
+            "required": ["area", "average_room_height", "exposed_perimeter", "party_wall_length"],
             "properties": {
                 "area": {
                     "title": "Area",
@@ -1942,8 +1942,8 @@
                     "type": "number",
                     "exclusiveMinimum": 0
                 },
-                "exposed_perimieter": {
-                    "title": "Exposed perimiter",
+                "exposed_perimeter": {
+                    "title": "Exposed perimeter",
                     "description": "",
                     "type": "number",
                     "minimum": 0

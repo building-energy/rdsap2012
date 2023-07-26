@@ -444,6 +444,16 @@ def net_wall_area(
     net_wall_area = gross_area - window_area - door_area
     
     return net_wall_area
+
+
+def net_sheltered_wall_area(
+        gross_sheltered_wall_area,
+        door_area  # flat/maisonette to an unheated stair or corridor
+        ):
+    """
+    p10
+    """
+    return gross_sheltered_wall_area - door_area
         
 
 # If an alternative wall is present, the area of the alternative wall is 
@@ -467,6 +477,167 @@ def door_area(
     """
     return number_of_external_doors * 1.85
     
+
+# External doors except doors to an unheated corridor or stairwell are 
+# taken as being in the main part of the dwelling.
+
+# The door to an unheated corridor or stairwell is taken as part of the 
+# sheltered wall it is within, and so is in the building part containing 
+# the sheltered alternative wall (so not necessarily in the main dwelling).
+
+# If the property has more than one door, doors except the first one 
+# are directly to the outside and taken as being in the main part of 
+# the dwelling.
+
+# Total window area is assessed as being typical, more than typical, 
+# much more than typical, less than typical, or much less than typical.
+
+# In RdSAP the definition of what is a window and what is a door is defined 
+# by the area of glazing in relation to the area of the whole opening, 
+# i.e. door and frame. 
+# To be classed as a window a glazed door and frame must contain glazing 
+# amounting to 60% or more or its surface area. 
+# Generally 60% or more glazing is likely to occur only in a patio door. 
+# However a window with less than 60% glazing is not a door; a door always 
+# provides a means of entry to the property.
+
+# An external door is a door that forms part of the heat loss perimeter 
+# of the dwelling. 
+# A door to a heated access corridor is not included in the door count. 
+# It is possible for a property to have no external door in the RdSAP data 
+# set (when any entrance to the property is via patio doors with more than 
+# 60% glazing which are counted as windows in SAP, or via a heated corridor).
+
+
+# S3.7.1 Window area typical, more than typical or less than typical
+
+# Window areas are obtained by application of the appropriate equation from 
+# Table S4. 
+# The equation used is chosen according to the age band of the main part 
+# of the dwelling, with the resulting total window area apportioned 
+# between main part and extension(s) pro rata to their floor areas. 
+# If the window area of any part of the dwelling (main, extension, 2nd 
+# extension etc) is greater than 90% of the exposed façade area of that 
+# part, after deducting doors and alternative wall area if applicable to 
+# that part, the window area is set equal to 90% of the façade area.
+
+def get_table_S4_window_area():
+    ""
+    d={}
+    fp=os.path.join('tables','table_S4_window_area.csv')
+    for x in list(csv.DictReader(open(fp))):
+        y=d.setdefault(x['age_band_of_main_dwelling'],{}).setdefault(x['dwelling_type'],{})
+        y['window_area_coefficient']=x['window_area_coefficient']
+        y['window_area_constant']=x['window_area_constant']
+    return d
+
+table_S4_window_area=get_table_S4_window_area()
+print(table_S4_window_area)
+
+
+def window_area(
+        TFA,  # total floor area of main part plus any extension
+        window_area_coefficient,
+        window_area_constant
+        ):
+    """
+    p11
+    """
+    WA = window_area_coefficient * TFA + window_area_constant
+
+    return WA
+
+# This does not include conservatories, which are treated separately: see S6.
+
+# The window areas calculated using Table S4 are to be reduced by 25% if it 
+# is assessed as being less than typical for the age and type of property, 
+# and increased by 25% if assessed as being more than typical for the age 
+# and type of property.
+
+# When assessing window area consider the whole dwelling (windows, glazed 
+# doors and roof lights), including any extensions (but not conservatories).
+
+# Typical applies if the surface area of the glazing in the dwelling is 
+# essentially as would be expected of a typical property of that age, type, 
+# size and character. 
+# Even if there is slightly more or less glazing than would be expected, up 
+# to 10% more or less.
+
+# More than typical applies if there is significantly more surface area of 
+# glazing than would be expected (15%-30% more), perhaps because there is a 
+# large sun room or numerous patio doors have been added.
+
+# Less than typical applies if there is significantly less glazing than 
+# would be expected. 
+# This is rare as homeowners tend not to take out windows, but a property 
+# may have an unusual design with few windows.
+
+# Much more than typical and Much less than typical should be used for 
+# those dwellings with very unusual amounts of glazing; such as a glass 
+# walled penthouse flat or a Huff Haus. 
+# Due to this option allowing measurements of each window to be accounted 
+# for, it should also be used if a dwelling has a mixture of multiple 
+# glazing types, e.g. double, triple, secondary, or a mixture of glazing 
+# gaps.
+
+# Sun rooms
+# ---------
+
+# For a highly glazed part of the dwelling, such as a sun room, which does not meet the criteria for a conservatory (50% of walls and 75% of roof glazed), in most cases use the glazing option of ‘more than typical’. That adds 25% to the total glazed area of the dwelling. If that is considered not appropriate, the window area is assessed by either:
+# a) measuring all windows and roof windows throughout the dwelling, or
+# b) measuring all windows and roof windows in the sun room, and use Table S4 to obtain the window area of remaining part of dwelling which is entered as a single window.
+
+# Record method used in site notes.
+
+# Two types of window are allowed for, single and multiple glazed. Multiple glazing can be double glazed units
+installed before 20021, double glazed units installed during/after 20021, double glazing unknown date, secondary
+glazing or triple glazing. For multiple glazing the U-value can be known.
+
+# ---
+# If more than one of type of multiple glazing is present, the assessor selects the type according to what is
+the most prevalent in the dwelling.
+If single glazing with secondary glazing, record as secondary glazing.
+If double glazing with secondary glazing, record as newer double glazing (i.e. later than the date in
+footnote 1).
+If secondary glazing has been removed in summer, enter as secondary glazing only if assessor can
+confirm that the panels exist and can be re-fitted. Evidence to be recorded on site notes.
+# ---
+
+# The window area of each part of the dwelling (main, extension 1, extension 2 etc) is divided into two areas, single
+and multiple, according to the assessor's estimate of the multiple-glazed percentage. The same percentage is used in
+main dwelling and each extension.
+
+
+# S3.7.2 Window area much more or much less than typical, and park homes
+
+
+
+# S3.8 Roof area
+
+
+
+# S3.9 Rooms in roof
+
+
+
+# S3.9.1 Area and U-value details of the roof rooms not collected
+
+
+# S3.9.2 Area and U-value details of the roof rooms are collected
+
+
+# S3.10 Heat loss floor area
+
+
+# S3.11 Heat loss floor area for houses and bungalows
+
+
+# S3.12 Heat loss floor area for flats and maisonettes
+
+
+
+# S3.13 Sheltered walls for flats and maisonettes
+
 
 
 
